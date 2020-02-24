@@ -4,8 +4,8 @@
 int main(void) {
     int i, n, r;
 
-    /* generates TeX source code
-    that draws a directed graph depicting random walk on a circle with radius r with n states using tikzpicture */
+    /* generates TeX source code that draws a directed graph depicting
+    random walk on a circle with radius r with n states using tikzpicture */
 
     printf("Enter number of states: ");
     scanf("%d", &n);
