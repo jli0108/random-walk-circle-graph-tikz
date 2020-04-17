@@ -23,15 +23,15 @@ int main(void) {
     }
     for (i = 0; i < n; i++) {
         if (i == n - 1) {
-            printf("    \\path (%d) edge [bend left] node {} (0);\n", i);
+            printf("    \\path (%d) edge [bend right] node {} (0);\n", i);
         } else {
-            printf("    \\path (%d) edge [bend left] node {} (%d);\n", i, i + 1);
+            printf("    \\path (%d) edge [bend right] node {} (%d);\n", i, i + 1);
         }
 
         if (i == 0) {
-            printf("    \\path (%d) edge [bend left] node {} (%d);\n", i, n - 1);
+            printf("    \\path (%d) edge [bend right] node {} (%d);\n", i, n - 1);
         } else {
-            printf("    \\path (%d) edge [bend left] node {} (%d);\n", i, i - 1);
+            printf("    \\path (%d) edge [bend right] node {} (%d);\n", i, i - 1);
         }
         
     }
